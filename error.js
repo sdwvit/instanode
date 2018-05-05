@@ -18,6 +18,9 @@ class ErrorWrapper {
   getMessage() {
     return this.error.description;
   }
+  toString() {
+    return `instanode #${this.getCode()}: ${this.getMessage()}`;
+  }
 }
 
 ErrorWrapper.err = {
