@@ -3,7 +3,6 @@
  */
 'use strict';
 const crypto = require('crypto');
-const path = require('path');
 const _ = require('lodash');
 const uuid = require('uuid');
 const request = require('request');
@@ -11,7 +10,7 @@ const error = require('./error');
 
 const ig_sig_key = '9b3b9e55988c954e51477da115c58ae82dcae7ac01c735b4443a3c5923cb593a';
 const ig_sig_key_ver = 4;
-const agent = 'Instagram 8.0.0 Android (18/4.3; 320dpi; 720x1280; Xiaomi; HM 1SW; armani; qcom; en_US)';
+const agent = 'Instagram 19.1.0.31.91 Android (24/7.1.1; 515dpi; 1440x2416; huawei/google; Nexus 6P; angler; angler; en_US)';
 const apiUrl = 'https://i.instagram.com/api/v1';
 
 this.apiCall = function(endPoint, post, cookies, callback) {
